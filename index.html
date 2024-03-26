@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><center>Expense Tracker</center></h1>
+  <form id="expense-form">
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" placeholder="Enter expense description">
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" placeholder="Enter expense amount">
+    <button type="submit">Add Expense</button>
+  </form>
+  <table id="expenses-table">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody id="expenses-list"></tbody>
+  </table>
+  <p id="total-expense">Total Expense: $0</p>
+
+  <div class="button">
+  <button id="print-button"><abbr title="Print statement"><img src="plogo.png" height="30px" width="30px"></img></abbr></button>
+  <button id="reset-button"><abbr title="Reset statement"><img src="rlogo.png" height="30px" width="30px"></img></abbr></button> <!-- Added Reset Button -->
+  </div>
+  <footer><center> &copy; 2024 - Madushan Prabod</center> </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
